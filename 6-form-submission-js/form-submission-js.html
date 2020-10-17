@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+        Test
+    </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="form-submission-js.js"></script>
+</head>
+<body>
+    <!-- Always returns false to prevent page reloading on form submission. Return value of called function has no impact on this. -->
+    <form onsubmit="onFormSubmit(event);return false;">
+        <div id="dd">
+            <label for="input1">Required</label>
+            <br>
+        </div>
+        <label for="input1">Required</label>
+        <br>
+        <input required id="input1">
+        <br>
+        <label for="input2">Not Required</label>
+        <br>
+        <input id="input2">
+        <br>
+        <label for="input3">Not Required</label>
+        <br>
+        <select id="input3">
+            <option>
+                Select
+            </option>
+        </select>
+        <br>
+        <label for="input4">Not Required</label>
+        <br>
+        <input type="checkbox" id="input4">
+        <br>
+        <input type="radio" name="radioGroup" id="input5">
+        <input type="radio" name="radioGroup" id="input6">
+        <button>
+            Submit
+        </button>
+    </form>
+</body>
